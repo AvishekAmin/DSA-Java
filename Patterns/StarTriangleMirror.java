@@ -2,7 +2,7 @@ package Patterns;
 
 import java.util.Scanner;
 
-public class TriangleStarMirror {
+public class StarTriangleMirror {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
