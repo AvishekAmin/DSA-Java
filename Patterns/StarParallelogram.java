@@ -2,24 +2,23 @@ package Patterns;
 
 import java.util.Scanner;
 
-public class StarPyramid {
+public class StarParallelogram {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a number: ");
-        int n = sc.nextInt();
+        System.out.print("Enter number of rows: ");
+        int row = sc.nextInt();
+        System.out.print("Enter number of columns: ");
+        int column = sc.nextInt();
         sc.close();
 
         System.out.println("Pattern: ");
-        for(int i=1; i<=n; i++) {
-            for(int j=1; j<=n-i; j++) {
+        for(int i=1; i<=row; i++) {
+            for(int j=1; j<=row-i; j++) {
                 System.out.print("  ");
             }
-            for(int j=1; j<=i; j++) {
-                System.out.print("* ");
-            }
-            for(int j=1; j<=i-1; j++) {
+            for(int j=1; j<=column; j++) {
                 System.out.print("* ");
             }
             System.out.println();

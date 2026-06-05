@@ -2,7 +2,7 @@ package Patterns;
 
 import java.util.Scanner;
 
-public class StarTriangle {
+public class StarRhombus {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -13,7 +13,10 @@ public class StarTriangle {
 
         System.out.println("Pattern: ");
         for(int i=1; i<=n; i++) {
-            for(int j=1; j<=i; j++) {
+            for(int j=1; j<=n-i; j++) {
+                System.out.print("  ");
+            }
+            for(int j=1; j<=n; j++) {
                 System.out.print("* ");
             }
             System.out.println();

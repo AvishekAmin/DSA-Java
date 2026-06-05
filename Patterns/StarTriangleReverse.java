@@ -7,7 +7,7 @@ public class StarTriangleReverse {
         
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter number of rows: ");
+        System.out.print("Enter a number: ");
         int n = sc.nextInt();
         sc.close();
 
