@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class PrimeNumber {
 
     public static boolean isPrime(int n) {
-
-        boolean isPrime = true;
+        if(n <= 1) {
+            return false;
+        }
         for(int i=2; i<=Math.sqrt(n); i++) {
-            if(n%i == 0) {
-                isPrime = false;
-                break;
+            if(n % i == 0) {
+                return false;
             }
         }
-        return isPrime;
+        return true;
     }
     public static void main(String[] args) {
 

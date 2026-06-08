@@ -5,15 +5,22 @@ import java.util.Scanner;
 public class PrimeNumberWithRange {
     
     public static boolean isPrime(int n) {
-
-        boolean isPrime = true;
+        if(n <= 1) {
+            return false;
+        }
         for(int i=2; i<=Math.sqrt(n); i++) {
-            if(n%i == 0) {
-                isPrime = false;
-                break;
+            if(n % i == 0) {
+                return false;
             }
         }
-        return isPrime;
+        return true;
+    }
+    public static void primesInRange(int start, int end) {
+        for (int i = start; i <= end; i++) {
+            if(isPrime(i)) {
+                System.out.print(i + " ");
+            }
+        }
     }
     public static void main(String[] args) {
 
@@ -25,10 +32,6 @@ public class PrimeNumberWithRange {
         sc.close();
 
         System.out.println("Prime numbers between " + start + " and " + end + " are: ");
-        for (int i = start; i <= end; i++) {
-            if(isPrime(i) == true) {
-                System.out.print(i + " ");
-            }
-        }
+        primesInRange(start, end);
     }
 }
