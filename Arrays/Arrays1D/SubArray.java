@@ -3,7 +3,8 @@ package Arrays.Arrays1D;
 import java.util.Scanner;
 
 public class SubArray {
-    public static void subarray(int arr[]) {
+    public static void printSubarrays(int arr[]) {
+        int count = 0; 
         for(int i=0; i<arr.length; i++) {
             int start = i;
             for(int j=i; j<arr.length; j++) {
@@ -11,10 +12,12 @@ public class SubArray {
                 for(int k=start; k<=end; k++) {
                     System.out.print(arr[k] + " ");
                 }
+                count++;
                 System.out.println();
             }
             System.out.println();
         }
+        System.out.println("Total subarrays: " + count);
     }
     public static void main(String args[])
     {
@@ -29,6 +32,6 @@ public class SubArray {
         }
         sc.close();
         System.out.println("Subarrays are: ");
-        subarray(arr);
+        printSubarrays(arr);
     }
 }
