@@ -13,6 +13,5 @@ public class Increment {
         int d = c++;
         System.out.println(c);
         System.out.println(d);
-
     }
 }

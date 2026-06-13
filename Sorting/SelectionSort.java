@@ -25,15 +25,13 @@ public class SelectionSort {
         int n = sc.nextInt();
         int arr[] = new int[n];
         System.out.print("Enter " + n + " elements: ");
-        for(int i=0; i<arr.length; i++)
-        {
+        for(int i=0; i<arr.length; i++) {
             arr[i] = sc.nextInt();
         }
         sc.close();
         selectionSort(arr);
         System.out.print("Sorted array: ");
-        for(int i=0; i<arr.length; i++)
-        {
+        for(int i=0; i<arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();

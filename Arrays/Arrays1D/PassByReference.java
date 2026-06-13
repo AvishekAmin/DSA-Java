@@ -21,15 +21,13 @@ public class PassByReference {
         sc.close();
 
         System.out.print("Before updatation: ");
-        for(int i=0; i<marks.length; i++)
-        {
+        for(int i=0; i<marks.length; i++) {
             System.out.print(marks[i] + " ");
         }
         System.out.println();
         System.out.print("After updatation: ");
         update(marks);
-        for(int i=0; i<marks.length; i++)
-        {
+        for(int i=0; i<marks.length; i++) {
             System.out.print(marks[i] + " ");
         }
         System.out.println();

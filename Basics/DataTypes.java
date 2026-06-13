@@ -1,26 +1,26 @@
 package Basics;
 
 public class DataTypes {
-        public static void main(String args[]) {
-            byte b = 8;
-            System.out.println(b);
+    public static void main(String args[]) {
+        byte b = 8;
+        System.out.println(b);
 
-            char ch = 'a';
-            System.out.println(ch);
+        char ch = 'a';
+        System.out.println(ch);
 
-            boolean var = true;
-            System.out.println(var);
+        boolean var = true;
+        System.out.println(var);
 
-            float price = 10.5f;
-            System.out.println(price);
+        float price = 10.5f;
+        System.out.println(price);
 
-            int number = 25;
-            System.out.println(number);
+        int number = 25;
+        System.out.println(number);
 
-            //long
-            //double
-            
-            short n = 240;
-            System.out.println(n);
-        }
+        //long
+        //double
+        
+        short n = 240;
+        System.out.println(n);
+    }
 }
