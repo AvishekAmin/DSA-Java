@@ -8,11 +8,7 @@ public class anagrams2 {
         str1 = str1.toLowerCase();
         str2 = str2.toLowerCase();
 
-        int charStr1 = str1.length();
-        int charStr2 = str2.length();
-        int count = 0;
-
-        if (charStr1 != charStr2) {
+        if (str1.length() != str2.length()) {
             return false;
         } else {
             char[] str1CharArray = str1.toCharArray();
