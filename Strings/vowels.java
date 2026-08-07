@@ -2,7 +2,7 @@ package Strings;
 
 import java.util.Scanner;
 
-public class vowels {
+public class Vowels {
     public static int countVowels(String str) {
         int count = 0;
         for(int i = 0; i < str.length(); i++) {

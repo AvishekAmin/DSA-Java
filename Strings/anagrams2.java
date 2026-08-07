@@ -2,7 +2,7 @@ package Strings;
 
 import java.util.*;
 
-public class anagrams2 {
+public class Anagrams2 {
     public static boolean checkAnagrams(String str1, String str2) {
 
         str1 = str1.toLowerCase();
