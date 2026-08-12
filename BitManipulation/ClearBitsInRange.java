@@ -11,7 +11,7 @@ public class ClearBitsInRange {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a binary number: ");
+        System.out.print("Enter a number: ");
         int n = sc.nextInt();
         System.out.print("Enter i value: ");
         int i = sc.nextInt();
